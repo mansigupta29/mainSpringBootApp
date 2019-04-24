@@ -3,23 +3,20 @@ package org.mansi.mainservice.controller;
 
 import org.mansi.mainservice.models.Contact;
 import org.mansi.mainservice.models.UserDirectory;
-import org.mansi.mainservice.service.DirectoryService;
+import org.mansi.mainservice.service.UserDirectoryService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
 
 
-import java.util.Arrays;
 import java.util.List;
 
 @RestController
-@RequestMapping("/user")
-public class DirectoryController {
+@RequestMapping("/")
+public class UserDirectoryController {
 
 
     @Autowired
-    DirectoryService directoryService;
+    UserDirectoryService directoryService;
 
     @RequestMapping(method = RequestMethod.POST)
     public void addUser(@RequestBody UserDirectory userDirectory){

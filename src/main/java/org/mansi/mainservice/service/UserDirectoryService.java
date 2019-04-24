@@ -14,7 +14,7 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
-public class DirectoryService {
+public class UserDirectoryService {
 
     @Autowired
     private RestTemplate restTemplate;
