@@ -28,8 +28,8 @@ public class UserDirectoryService {
 
     public UserDirectory getUserInfo(String userName){
 
-        UserDirectory contactList = restTemplate.getForObject(baseUrl+"/directory/users/"+ userName, UserDirectory.class);
-        return contactList;
+        UserDirectory userDirectory = restTemplate.getForObject(baseUrl+"/directory/users/"+ userName, UserDirectory.class);
+        return userDirectory;
 
     }
 
